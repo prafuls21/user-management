@@ -1,0 +1,44 @@
+/* src/app/app.component.scss */
+.sidenav-container {
+  height: 100vh;
+}
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme {
+  background-color: #303030;
+  color: #fff;
+}

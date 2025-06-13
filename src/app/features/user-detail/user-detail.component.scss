@@ -1,0 +1,11 @@
+/* src/app/features/user-detail/user-detail.component.scss */
+.user-detail-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+}

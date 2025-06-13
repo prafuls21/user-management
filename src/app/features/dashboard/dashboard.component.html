@@ -1,0 +1,33 @@
+<!-- src/app/features/dashboard/dashboard.component.html -->
+<mat-grid-list cols="3" rowHeight="3:1">
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Total Users</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ (users$ | async)?.length }}</h2>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Active Users</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ (users$ | async | activeUser)?.length }}</h2>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+   <mat-grid-tile>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Inactive Users</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+         <h2>{{ (users$ | async | inActiveUser)?.length }}</h2>
+    </mat-card-content>
+  </mat-card>
+</mat-grid-tile>
+</mat-grid-list>
